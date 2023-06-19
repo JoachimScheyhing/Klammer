@@ -1,4 +1,6 @@
-const float FW_VERSION = 0.02;
+//
+// 19.06.2023 Abschluss, Übergabe SE
+const float FW_VERSION = 1.00;
 // KLAMMER - MASTER - CONTROL
 // Übernahme Adaption ESP32 / Stromzähler
 //
