@@ -1,6 +1,7 @@
 //
 // 19.06.2023 Abschluss, Übergabe SE
-const float FW_VERSION = 1.00;
+//
+const float FW_VERSION = 1.01;
 // KLAMMER - MASTER - CONTROL
 // Übernahme Adaption ESP32 / Stromzähler
 //
@@ -517,6 +518,9 @@ void setup()
     char  message[50];
     
     // IO konfigurieren
+    pinMode(15, OUTPUT); // to boot with battery...
+    digitalWrite(15,1);  // and/or power from 5v rail instead of USB
+
     pinMode(SW_CLOSE,   INPUT_PULLUP);
     pinMode(SW_OPEN,    INPUT_PULLUP);
     pinMode(PAUSE,      INPUT_PULLUP);
